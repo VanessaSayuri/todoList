@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> To Do LIST</title>
+
+
+    <meta charset="utf-8" name="viewport">
+
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/layout.css"> -->
+    <script src="scripts/mainscript.js" defer></script>
+
+</head>
+
+<body>
+
+    <nav id="menu-lateral" class="menu-lateral">
+        <div>
+            <p>Menu Lateral</p>
+
+            <ul>
+                <li>Compras</li>
+                <li>Trabalho</li>
+                <li>Recados</li>
+                <li>Pessoal</li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <header class="layout-cabecalho" id="cabecalho">
+
+        <div id="data-hoje">
+        </div>
+
+    </header>
+
+
+    <form method="post">
+        <form class="inserirAtividadeTabela">
+            <label for="atividade">Atividade</label>
+            <input type="text" id="atividade" placeholder="Qual atividade?">
+
+            <input type="date" id="data-atividade" placeholder="">
+
+            <select name="prioridade-select" id="prioridade">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+
+            <select name="status-select" id="status">
+                <option value="A fazer">A FAZER</option>
+                <option value="Em andamento">EM ANDAMENTO</option>
+                <option value="Concluída">CONCLUÍDA</option>
+            </select>
+            <button type="submit" id="addButton">Adicionar</button>
+
+        </form>
+    </form>
+
+    <div>
+
+        <table class="tg" id="tbl">
+            <thead>
+                <tr>
+                    <th class="tg-baqh">ID</th>
+                    <th class="tg-baqh">Atividade</th>
+                    <th class="tg-baqh">Prazo</th>
+                    <th class="tg-baqh">Prioridade</th>
+                    <th class="tg-baqh">Status</th>
+                    <th class="tg-baqh"> . . . </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
